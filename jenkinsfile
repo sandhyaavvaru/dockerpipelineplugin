@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'tomee' }
+        docker { image 'node:16.13.1-alpine' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'cat /tomcat-users.xml'
+                sh 'node --version'
             }
         }
     }
