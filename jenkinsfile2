@@ -5,7 +5,7 @@ pipeline{
     stages{
       stage(build){
         steps{
-           sh 'docker run image'
+          docker image=dockerfile todo
         }
       }
     }
